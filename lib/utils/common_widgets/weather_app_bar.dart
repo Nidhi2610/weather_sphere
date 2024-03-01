@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:weather_sphere/utils/app_colors.dart';
 import 'package:weather_sphere/utils/font_sizes.dart';
 
@@ -17,7 +18,12 @@ class WeatherAppBar extends StatelessWidget {
   Widget build(BuildContext context) {
     return AppBar(
       backgroundColor: AppColors.transparentColor,
-      leading: Icon(Icons.location_on, color: AppColors.white),
+      leading: GestureDetector(
+          onTap: () {
+            onTap.call();
+          },
+          child: Icon(FontAwesomeIcons.list,
+              color: AppColors.white)),
       title: Text(
         cityNames,
         style: AppFonts.medium(
@@ -25,17 +31,6 @@ class WeatherAppBar extends StatelessWidget {
             .copyWith(fontSize: AppFontSize.s18),
       ),
       elevation: 0,
-      actions: [
-        Padding(
-          padding: const EdgeInsets.only(right: 18.0),
-          child: GestureDetector(
-              onTap: () {
-                onTap.call();
-              },
-              child: Icon(Icons.info_outline_sharp,
-                  color: AppColors.white)),
-        )
-      ], // Removes shadow
     );
   }
 }

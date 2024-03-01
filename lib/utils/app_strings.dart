@@ -16,7 +16,7 @@ class AppString {
   static String cancel = "Cancel";
   static String addNew = "Add new";
   static String search = "Search...";
-  static String savedLocations = "Saved Locations";
+  static String savedLocations = "My Locations";
   static String weatherAppRouteNotFound = "Route Not Found";
   static String weatherAppEnableLocation =
       "Please enable location services so that we can determine your location";

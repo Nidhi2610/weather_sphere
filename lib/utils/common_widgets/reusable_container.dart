@@ -32,7 +32,7 @@ class NextWeekCard extends StatelessWidget {
         Icon(
           AppUtils().getWeatherIcon(
               forecastModel.weather[0].icon),
-          size: 50.0,
+          size: 35.0,
           color: AppColors.yellow,
 
 

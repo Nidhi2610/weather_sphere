@@ -38,7 +38,8 @@ class MainUIWidget extends StatelessWidget {
           right: 0,
           bottom: 20,
           child: AppBar(
-            automaticallyImplyLeading: false,
+            automaticallyImplyLeading: true,
+            foregroundColor: AppColors.white,
             backgroundColor: Colors.transparent,
             title: Text(
               AppString.savedLocations,
