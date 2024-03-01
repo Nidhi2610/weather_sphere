@@ -65,6 +65,7 @@ dependencies:
   shimmer:
   fluttertoast:
   font_awesome_flutter:
+  flutter_launcher_icons:
 
 dev_dependencies:
   flutter_test:

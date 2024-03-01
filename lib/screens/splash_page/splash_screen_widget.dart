@@ -26,7 +26,7 @@ class _NewSplashState extends State<NewSplash> with TickerProviderStateMixin {
   }
 
   Future<void> _navigateToMainScreen() async {
-    await Future.delayed(const Duration(seconds: 7));
+    await Future.delayed(const Duration(seconds: 4));
 
     if (mounted) {
       Navigator.pushReplacementNamed(context, WeatherRoutes.homePageRoute,
@@ -52,33 +52,7 @@ class _NewSplashState extends State<NewSplash> with TickerProviderStateMixin {
                   .copyWith(fontSize: AppFontSize.s30),
             ),
           ),
-          Align(
-              alignment: Alignment.bottomCenter,
-              child: GestureDetector(
-                onTap: (){
-                  Navigator.pushReplacementNamed(context, WeatherRoutes.homePageRoute,
-                      arguments: [false, null]);
-                },
-                child: SizedBox(
-                  width: 300.w,
-                  child: Card(
-                    elevation: 10,
-                    color: AppColors.grey,
-                    child: Padding(
-                      padding: const EdgeInsets.all(WeatherAppPaddings.s8),
-                      child: Center(
-                        child: Text(
-                          AppString.continueToPage,
-                          style: AppFonts.large(
-                                  fontWeight: FontWeight.w500,
-                                  color: AppColors.black)
-                              .copyWith(fontSize: AppFontSize.s19),
-                        ),
-                      ),
-                    ),
-                  ),
-                ),
-              ))
+
         ],
       ),
     );

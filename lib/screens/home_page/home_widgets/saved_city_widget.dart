@@ -102,7 +102,7 @@ class SavedCityWidget extends StatelessWidget {
                               ? Icon(
                                   AppUtils().getWeatherIcon(
                                       cityModel!.weather[0].icon),
-                                  size: 100.0,
+                                  size: 80.0,
                                 )
                               : Image.network(AppUtils().getWeatherIconURL(
                                   cityModel!.weather[0].icon)),
@@ -114,7 +114,7 @@ class SavedCityWidget extends StatelessWidget {
                             style: AppFonts.large(
                                     fontWeight: FontWeight.w700,
                                     color: AppColors.white)
-                                .copyWith(fontSize: AppFontSize.s30),
+                                .copyWith(fontSize: AppFontSize.s25),
                           ),
 
                           //temp
@@ -131,7 +131,7 @@ class SavedCityWidget extends StatelessWidget {
                                               fontWeight: FontWeight.w500,
                                               color: AppColors.white)
                                           .copyWith(
-                                              fontSize: AppFontSize.s48),
+                                              fontSize: AppFontSize.s40),
                                     ),
                                     WidgetSpan(
                                       child: Transform.translate(

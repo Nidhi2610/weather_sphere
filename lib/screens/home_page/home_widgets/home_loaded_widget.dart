@@ -103,7 +103,7 @@ class CurrentCityLoadedUIWidget extends StatelessWidget {
                               ? Icon(
                                   AppUtils().getWeatherIcon(
                                       weatherCityModel.weather[0].icon),
-                                  size: 100.0,
+                                  size: 80.0,
                                   color: AppColors.yellow,
                                 )
                               : Image.network(
@@ -119,7 +119,7 @@ class CurrentCityLoadedUIWidget extends StatelessWidget {
                             style: AppFonts.large(
                                     fontWeight: FontWeight.w700,
                                     color: AppColors.white)
-                                .copyWith(fontSize: AppFontSize.s30),
+                                .copyWith(fontSize: AppFontSize.s25),
                           ),
 
                           //temp
@@ -137,7 +137,7 @@ class CurrentCityLoadedUIWidget extends StatelessWidget {
                                               fontWeight: FontWeight.w500,
                                               color: AppColors.white)
                                           .copyWith(
-                                              fontSize:AppFontSize.s48),
+                                              fontSize:AppFontSize.s40),
                                     ),
                                     WidgetSpan(
                                       child: Transform.translate(
