@@ -48,7 +48,7 @@ class MyApp extends StatelessWidget {
                       GetUserCityWeatherControllerBloc(appServiceLocator())),
             ],
             child: MaterialApp(
-              title: AppString.weatherCast,
+              title: AppString.weatherSphere,
               theme: ThemeData(
                 colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
                 useMaterial3: true,

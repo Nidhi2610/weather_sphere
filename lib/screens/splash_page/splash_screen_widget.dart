@@ -45,7 +45,7 @@ class _NewSplashState extends State<NewSplash> with TickerProviderStateMixin {
           Lottie.asset(WeatherAppResources.splashLottie),
           Center(
             child: Text(
-              AppString.weatherCast,
+              AppString.weatherSphere,
               style: AppFonts.large(
                       fontWeight: FontWeight.w700,
                       color: AppColors.violateColor)
